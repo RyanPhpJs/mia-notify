@@ -108,6 +108,7 @@ app.use((req, res, next) => {
     if (req.headers.authorization !== "Bearer " + process.env.AUTH_TOKEN) {
         return res.status(401).send({ message: "Unathorized" });
     }
+    next();
 });
 
 app.get("/api/recent/anime", async (req, res) => {
