@@ -5,8 +5,10 @@ if (existsSync(".env")) {
         dotenv.config();
     }
 } else {
-    console.error("Not found env data");
-    process.exit();
+    if (!process.env.CH_EMAIL || !process.env.CH_PASSWORD) {
+        console.error("Not found env data");
+        process.exit();
+    }
 }
 const cr = require("crunchyroll.js");
 const { PrismaClient } = require("@prisma/client");
