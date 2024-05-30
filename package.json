@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "@prisma/client": "^5.14.0",
+        "cronchy": "^0.1.1",
+        "crunchyroll-js-api": "^1.3.0",
+        "crunchyroll.js": "file:./lib/crunchyroll.js/",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "node-fetch": "^3.3.2",
+        "prisma": "^5.14.0",
+        "request": "^2.88.2",
+        "uuid-by-string": "^4.0.0"
+    },
+    "devDependencies": {
+        "jasmine": "^5.1.0"
+    }
+}
